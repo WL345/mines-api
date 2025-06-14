@@ -59,7 +59,7 @@ def log_application(user_id=Body(...), type_=Body(...)):
 
     conn.commit()
     conn.close()
-    return JSONResponse(content={"message": f"Entry created successfully. USER_ID: {user_id}, TYPE: {type_}"})
+    return JSONResponse(content={"message": "Entry created successfully"}, status_code=200)
 
 
 @app.get("/apps/setup")
