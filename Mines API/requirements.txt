@@ -1,0 +1,4 @@
+fastapi
+sqlite3
+fastapi.responses
+uvicorn
