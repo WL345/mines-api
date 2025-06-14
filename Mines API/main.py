@@ -140,7 +140,7 @@ def view_all_apps(api_key: str = Query(...)):
 
 @app.get("/apps/delete-all")
 def delete_all_apps(api_key: str = Query(...)):
-    if api_key != "qwe1234":
+    if api_key != "officialMinesAppsAPI":
         raise HTTPException(status_code=403, detail="Invalid API key")
 
     try:
